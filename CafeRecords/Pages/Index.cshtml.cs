@@ -23,35 +23,44 @@ namespace CafeRecords.Pages
         public void OnGet()
         {
             List<Owner> cafeOwners = new List<Owner>();
-            using (WebClient webClient = new WebClient())
+
+            string CafeJsonString = GetData("https://data.cityofchicago.org/resource/mqmh-p6ud.json");
+            Cafe[] allCafes = Cafe.FromJson(CafeJsonString);
+            ViewData["allCafes"] = allCafes;
+
+            string OwnerJsonString = GetData("https://data.cityofchicago.org/resource/ezma-pppn.json");
+            Owner[] allOwners = Owner.FromJson(OwnerJsonString);
+            ViewData["allOwners"] = allOwners;
+
+            IDictionary<string, Cafe> cafes = new Dictionary<string, Cafe>();
+
+            foreach (Cafe cafe in allCafes)
             {
-                string CafeJsonString = webClient.DownloadString("https://data.cityofchicago.org/resource/mqmh-p6ud.json");
-                Cafe[] allCafes = Cafe.FromJson(CafeJsonString);
-                ViewData["allCafes"] = allCafes;
+                cafes.Add(cafe.PermitNumber, cafe);
+            }
 
-                string OwnerJsonString = webClient.DownloadString("https://data.cityofchicago.org/resource/ezma-pppn.json");
-                Owner[] allOwners = Owner.FromJson(OwnerJsonString);
-                ViewData["allOwners"] = allOwners;
-
-                IDictionary<string, Cafe> cafes = new Dictionary<string, Cafe>();
-
-                foreach (Cafe cafe in allCafes)
+            foreach (Owner owner in allOwners)
+            {
+                foreach (var cafe in cafes)
                 {
-                    cafes.Add(cafe.PermitNumber, cafe);
-                }
-
-                foreach (Owner owner in allOwners)
-                {
-                    foreach (var cafe in cafes)
+                    if (cafe.Value.AccountNumber == owner.AccountNumber)
                     {
-                        if (cafe.Value.AccountNumber == owner.AccountNumber)
-                        {
-                            cafeOwners.Add(owner);
-                        }
+                        cafeOwners.Add(owner);
                     }
                 }
-                ViewData["cafeOwners"] = cafeOwners;
             }
+            ViewData["cafeOwners"] = cafeOwners;
         }
+
+        public string GetData(string endpoint)
+        {
+            string downloadedJson = "";
+            using (WebClient webClient = new WebClient())
+            {
+                downloadedJson = webClient.DownloadString(endpoint); ;
+            }
+            return downloadedJson;
+        }
+
     }
 }
