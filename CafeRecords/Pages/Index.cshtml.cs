@@ -9,6 +9,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using OwnerRecord;
 
+/*Cafe Owner Project Combines two JSON files.
+ * One file named Owners has the information about business owners and their titles
+ * Another file named Cafe has information like address, permit number, Issue dte etc about cafes present in Chicago area 
+ * The field common to both of these JSON is Account Number
+ * By matching the Account Number we can determine the owner name of the cafe and display the information in a table
+ */
+
 namespace CafeRecords.Pages
 {
     public class IndexModel : PageModel
