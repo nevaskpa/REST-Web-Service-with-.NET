@@ -8,22 +8,25 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">List of owner names</h1>
 
-    <table>
+    <table class="table">
         <tr>
             <th>Account Number</th>
             <th>Legal Name</th>
-            <th>Owner Name</th>            
+            <th>Owner Name</th>
         </tr>
         @{
             foreach (OwnerRecord.Owner owner in cafeOwners)
             {
-                <tr>
-                    <td>@owner.AccountNumber</td>
-                    <td>@owner.DoingBusinessAsName</td>
-                    <td>@owner.OwnerFirstName @owner.OwnerMiddleInitial @owner.OwnerLastName</td>
-                </tr>
+                @if ((owner.OwnerFirstName + owner.OwnerMiddleInitial + owner.OwnerLastName) != "")
+                {
+                    <tr>
+                        <td>@owner.AccountNumber</td>
+                        <td>@owner.DoingBusinessAsName</td>
+                        <td>@owner.OwnerFirstName @owner.OwnerMiddleInitial @owner.OwnerLastName</td>
+                    </tr>
+                }
             }
         }
     </table>
