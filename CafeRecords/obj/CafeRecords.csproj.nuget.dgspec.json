@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Indrasis\\Source\\Repos\\IS70242\\CafeRecords\\CafeRecords.csproj": {}
+    "C:\\Users\\Indrasis\\source\\repos\\IS70242\\CafeRecords\\CafeRecords.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Indrasis\\Source\\Repos\\IS70242\\CafeRecords\\CafeRecords.csproj": {
+    "C:\\Users\\Indrasis\\source\\repos\\IS70242\\CafeRecords\\CafeRecords.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Indrasis\\Source\\Repos\\IS70242\\CafeRecords\\CafeRecords.csproj",
+        "projectUniqueName": "C:\\Users\\Indrasis\\source\\repos\\IS70242\\CafeRecords\\CafeRecords.csproj",
         "projectName": "CafeRecords",
-        "projectPath": "C:\\Users\\Indrasis\\Source\\Repos\\IS70242\\CafeRecords\\CafeRecords.csproj",
+        "projectPath": "C:\\Users\\Indrasis\\source\\repos\\IS70242\\CafeRecords\\CafeRecords.csproj",
         "packagesPath": "C:\\Users\\Indrasis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Indrasis\\Source\\Repos\\IS70242\\CafeRecords\\obj\\",
+        "outputPath": "C:\\Users\\Indrasis\\source\\repos\\IS70242\\CafeRecords\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
