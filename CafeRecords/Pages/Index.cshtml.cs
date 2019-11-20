@@ -32,6 +32,8 @@ namespace CafeRecords.Pages
             Owner[] allOwners = Owner.FromJson(OwnerJsonString);
             ViewData["allOwners"] = allOwners;
 
+
+
             IDictionary<string, Cafe> cafes = new Dictionary<string, Cafe>();
 
             foreach (Cafe cafe in allCafes)
@@ -43,21 +45,33 @@ namespace CafeRecords.Pages
             {
                 foreach (var cafe in cafes)
                 {
+                    //Compare Account Number from two JSON and select only ones which have common account number
                     if (cafe.Value.AccountNumber == owner.AccountNumber)
                     {
                         cafeOwners.Add(owner);
                     }
+
+                    if(owner.OwnerFirstName == null)
+                    {
+                        owner.OwnerFirstName = "No Information Available";
+                    }
+
                 }
             }
+
             ViewData["cafeOwners"] = cafeOwners;
+
         }
+
+
+
 
         public string GetData(string endpoint)
         {
-            string downloadedJson = "";
+            string downloadedJson;
             using (WebClient webClient = new WebClient())
             {
-                downloadedJson = webClient.DownloadString(endpoint); ;
+                downloadedJson = webClient.DownloadString(endpoint);
             }
             return downloadedJson;
         }
