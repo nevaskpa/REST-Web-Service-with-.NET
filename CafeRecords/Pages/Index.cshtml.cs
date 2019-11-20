@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net;
-using System.Threading.Tasks;
 using CafeRecord;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using OwnerRecord;
@@ -24,13 +20,13 @@ namespace CafeRecords.Pages
         {
             List<Owner> cafeOwners = new List<Owner>();
 
-            string CafeJsonString = GetData("https://data.cityofchicago.org/resource/mqmh-p6ud.json");
-            Cafe[] allCafes = Cafe.FromJson(CafeJsonString);
-            ViewData["allCafes"] = allCafes;
+            string cafeJsonString = GetData("https://data.cityofchicago.org/resource/mqmh-p6ud.json");
+            Cafe[] allCafes = Cafe.FromJson(cafeJsonString);
+            
 
-            string OwnerJsonString = GetData("https://data.cityofchicago.org/resource/ezma-pppn.json");
-            Owner[] allOwners = Owner.FromJson(OwnerJsonString);
-            ViewData["allOwners"] = allOwners;
+            string ownerJsonString = GetData("https://data.cityofchicago.org/resource/ezma-pppn.json");
+            Owner[] allOwners = Owner.FromJson(ownerJsonString);
+            
 
             IDictionary<string, Cafe> cafes = new Dictionary<string, Cafe>();
 
@@ -43,6 +39,7 @@ namespace CafeRecords.Pages
             {
                 foreach (var cafe in cafes)
                 {
+                    
                     if (cafe.Value.AccountNumber == owner.AccountNumber)
                     {
                         cafeOwners.Add(owner);
@@ -57,7 +54,7 @@ namespace CafeRecords.Pages
             string downloadedJson = "";
             using (WebClient webClient = new WebClient())
             {
-                downloadedJson = webClient.DownloadString(endpoint); ;
+                downloadedJson = webClient.DownloadString(endpoint);
             }
             return downloadedJson;
         }
