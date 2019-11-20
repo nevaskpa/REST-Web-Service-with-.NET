@@ -26,6 +26,7 @@ namespace CafeRecords.Pages
 
             string cafeJsonString = GetData("https://data.cityofchicago.org/resource/mqmh-p6ud.json");
             Cafe[] allCafes = Cafe.FromJson(cafeJsonString);
+
             
 
             string ownerJsonString = GetData("https://data.cityofchicago.org/resource/ezma-pppn.json");
