@@ -1,32 +1,31 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
-    CafeRecord.Cafe[] allCafes = (CafeRecord.Cafe[])ViewData["allCafes"];
-    OwnerRecord.Owner[] allOwners = (OwnerRecord.Owner[])ViewData["allOwners"];
     List<OwnerRecord.Owner> cafeOwners = (List<OwnerRecord.Owner>)ViewData["cafeOwners"];
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+<div class="text-center">            
+            <h1 class="display-4">Cafe Records</h1>
 
-    <table>
-        <tr>
-            <th>Account Number</th>
-            <th>Legal Name</th>
-            <th>Owner Name</th>            
-        </tr>
-        @{
-            foreach (OwnerRecord.Owner owner in cafeOwners)
-            {
-                <tr>
-                    <td>@owner.AccountNumber</td>
-                    <td>@owner.DoingBusinessAsName</td>
-                    <td>@owner.OwnerFirstName @owner.OwnerMiddleInitial @owner.OwnerLastName</td>
-                </tr>
-            }
-        }
-    </table>
-</div>
+            <table class="table table-striped" style="background-color: lightgrey;">
+                <thead>
+                    <tr>
+                        <th>Account Number</th>
+                        <th>Legal Name</th>
+                        <th>Owner Name</th>
+                    </tr>
+                <thead>
+                    @{
+                        foreach (OwnerRecord.Owner owner in cafeOwners)
+                        {
+                            <tr>
+                                <td>@owner.AccountNumber</td>
+                                <td>@owner.DoingBusinessAsName</td>
+                                <td>@owner.OwnerFirstName @owner.OwnerMiddleInitial @owner.OwnerLastName</td>
+                            </tr>
+                        }
+                    }
+            </table>
 
+    </div>
 
