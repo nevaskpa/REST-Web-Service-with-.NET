@@ -11,11 +11,13 @@
         [JsonProperty("zip_code")]
         public string ZipCode { get; set; }
 
+
         [JsonProperty(":@computed_region_43wa_7qmu")]
         public string ComputedRegion43Wa7Qmu { get; set; }
 
         [JsonProperty("location")]
         public Location Location { get; set; }
+
 
         [JsonProperty("city")]
         public string City { get; set; }

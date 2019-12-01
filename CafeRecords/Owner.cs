@@ -34,6 +34,16 @@ namespace OwnerRecord
 
         [JsonProperty("owner_title")]
         public string OwnerTitle { get; set; }
+
+        public bool IsNameNull(string ownerName)
+        {
+            if (ownerName == "")
+            {
+                return true;
+            }
+            else
+                return false;
+        }
     }
 
     public partial class Owner

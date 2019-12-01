@@ -1,0 +1,71 @@
+﻿@page
+@model CafeRecords.Pages.SearchCafeOwnerModel
+@{
+    ViewData["Title"] = "SearchCafeOwner";
+    CafeRecord.Cafe[] cafes = (CafeRecord.Cafe[])ViewData["allCafes"];
+}
+
+<h1>SearchCafeOwner</h1>
+<form action="" method="POST">
+    <div class="form-group">
+        <label class="control-label" for="search"><strong></strong></label>
+        <input type="text" class="form-control" name="search" id="search" required />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Search Cafe Owners" class="btn btn-danger" />
+    </div>
+</form>
+
+@if (Model.SearchCompleted)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <div class="nav nav-tabs nav-fill" role="tablist">
+                        <a class="nav-item nav-link active" data-toggle="tab" href="#businessOwners" role="tab" aria-controls="nav-home" aria-selected="true">Business Owners</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="businessOwners" role="tabpanel">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Account Number</th>
+                                    <th>Business Name</th>
+                                    <th>Address</th>
+                                    <th>Legal Name</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.cafes.Count() > 0)
+                                {
+                                    @foreach (var cafe in Model.cafes)
+                                    {
+                                <tr>
+                                    <td>@cafe.AccountNumber</td>
+                                    <td>@cafe.DoingBusinessAsName</td>
+                                    <td>@cafe.Address</td>
+                                    <td>@cafe.LegalName</td>
+                                </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr class="danger">
+                                        <td colspan="5" class="text-center">
+                                            <span class="font-weight-bolder text-danger">No results found for term "@Model.Search"</span>
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
