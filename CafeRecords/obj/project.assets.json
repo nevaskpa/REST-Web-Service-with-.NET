@@ -12937,23 +12937,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gnsni\\.nuget\\packages\\": {},
+    "C:\\Users\\Parnika\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gnsni\\Desktop\\XMl\\cafe_records\\CafeRecords\\CafeRecords.csproj",
+      "projectUniqueName": "C:\\Users\\Parnika\\source\\repos\\nevaskpa\\IS7024\\CafeRecords\\CafeRecords.csproj",
       "projectName": "CafeRecords",
-      "projectPath": "C:\\Users\\gnsni\\Desktop\\XMl\\cafe_records\\CafeRecords\\CafeRecords.csproj",
-      "packagesPath": "C:\\Users\\gnsni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gnsni\\Desktop\\XMl\\cafe_records\\CafeRecords\\obj\\",
+      "projectPath": "C:\\Users\\Parnika\\source\\repos\\nevaskpa\\IS7024\\CafeRecords\\CafeRecords.csproj",
+      "packagesPath": "C:\\Users\\Parnika\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Parnika\\source\\repos\\nevaskpa\\IS7024\\CafeRecords\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gnsni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Parnika\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13000,16 +13000,10 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }

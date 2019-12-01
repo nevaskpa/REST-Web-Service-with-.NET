@@ -154,3 +154,5 @@ C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords_1\CafeRecords\obj\Debu
 C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords_1\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.dll
 C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords_1\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.pdb
 C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords_1\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.csproj.CopyComplete
+C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\SearchCafeOwner.g.cshtml.cs
+C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\JSONFeed.g.cshtml.cs
