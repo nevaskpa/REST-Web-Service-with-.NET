@@ -90,3 +90,36 @@ C:\Tanmay\Web Development with .NET\IS7024\CafeRecords\obj\Debug\netcoreapp2.2\C
 C:\Tanmay\Web Development with .NET\IS7024\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.dll
 C:\Tanmay\Web Development with .NET\IS7024\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.pdb
 C:\Tanmay\Web Development with .NET\IS7024\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.csproj.CopyComplete
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\bin\Debug\netcoreapp2.2\CafeRecords.deps.json
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\bin\Debug\netcoreapp2.2\CafeRecords.runtimeconfig.json
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\bin\Debug\netcoreapp2.2\CafeRecords.runtimeconfig.dev.json
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\bin\Debug\netcoreapp2.2\CafeRecords.dll
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\bin\Debug\netcoreapp2.2\CafeRecords.pdb
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\bin\Debug\netcoreapp2.2\CafeRecords.Views.dll
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\bin\Debug\netcoreapp2.2\CafeRecords.Views.pdb
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.csprojAssemblyReference.cache
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.RazorAssemblyInfo.cache
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.RazorAssemblyInfo.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.AssemblyInfoInputs.cache
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.AssemblyInfo.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.TagHelpers.input.cache
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.TagHelpers.output.cache
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.RazorCoreGenerate.cache
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\Error.cshtml.g.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\Index.cshtml.g.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.RazorTargetAssemblyInfo.cache
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.RazorTargetAssemblyInfo.cs
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.Views.pdb
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.dll
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.pdb
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.csproj.CopyComplete
+C:\Users\gnsni\Desktop\XMl\cafe_records\CafeRecords\obj\Debug\netcoreapp2.2\Razor\Pages\SearchCafeOwner.cshtml.g.cs
