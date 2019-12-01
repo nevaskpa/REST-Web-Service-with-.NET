@@ -9,6 +9,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using OwnerRecord;
 
+/*Cafe Owner Project Combines two JSON files.
+ * One file named Owners has the information about business owners and their titles
+ * Another file named Cafe has information like address, permit number, Issue dte etc about cafes present in Chicago area 
+ * The field common to both of these JSON is Account Number
+ * By matching the Account Number we can determine the owner name of the cafe and display the information in a table
+ */
+
 namespace CafeRecords.Pages
 {
     public class IndexModel : PageModel
@@ -32,6 +39,8 @@ namespace CafeRecords.Pages
             Owner[] allOwners = Owner.FromJson(OwnerJsonString);
             ViewData["allOwners"] = allOwners;
 
+
+
             IDictionary<string, Cafe> cafes = new Dictionary<string, Cafe>();
 
             foreach (Cafe cafe in allCafes)
@@ -43,21 +52,33 @@ namespace CafeRecords.Pages
             {
                 foreach (var cafe in cafes)
                 {
+                    //Compare Account Number from two JSON and select only ones which have common account number
                     if (cafe.Value.AccountNumber == owner.AccountNumber)
                     {
                         cafeOwners.Add(owner);
                     }
+
+                    if(owner.OwnerFirstName == null)
+                    {
+                        owner.OwnerFirstName = "No Information Available";
+                    }
+
                 }
             }
+
             ViewData["cafeOwners"] = cafeOwners;
+
         }
+
+
+
 
         public string GetData(string endpoint)
         {
-            string downloadedJson = "";
+            string downloadedJson;
             using (WebClient webClient = new WebClient())
             {
-                downloadedJson = webClient.DownloadString(endpoint); ;
+                downloadedJson = webClient.DownloadString(endpoint);
             }
             return downloadedJson;
         }
