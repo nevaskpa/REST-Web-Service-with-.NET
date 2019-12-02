@@ -11,7 +11,8 @@
  </head>
 <style>
 body  {
-  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2013/04/26/78634/998a3ff861f850b7d0ff68a47789ba3f-700.jpg");
+  
+background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2013/04/26/78634/998a3ff861f850b7d0ff68a47789ba3f-700.jpg");
   background-color: #cccccc;
 
 height: 100%; 
@@ -35,7 +36,7 @@ background-position: center;
         <input type="text" class="form-control" name="search" id="search" required />
     </div>
     <div class="form-group">
-        <input type="submit" value="Search Cafe Owners" class="btn btn-danger" />
+        <input type="submit" value="Search Cafe" class="btn btn-danger" />
     </div>
 </form>
 
@@ -51,10 +52,10 @@ background-position: center;
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="businessOwners" role="tabpanel">
-                        <table class="table table-border table-striped table-hover auto-index" bgcolor="white">
+                        <table class="bg-text">
                             <thead>
                                 <tr align="center">
-                                    <th align="left">Account Number</th>
+                                    <th align="left">Account No.</th>
                                     <th align="center">Cafe Name</th>
                                     <th align="center">Address</th>
                                     <th align="right">Business Name</th>
@@ -67,10 +68,10 @@ background-position: center;
                                     @foreach (var cafe in Model.cafes)
                                     {
                                 <tr>
-                                    <td align="center">@cafe.AccountNumber</td>
-                                    <td align="center">@cafe.DoingBusinessAsName</td>
-                                    <td align="center">@cafe.Address</td>
-                                    <td align="center">@cafe.LegalName</td>
+                                    <td align="center"><span class="text-monospace">@cafe.AccountNumber</span></td>
+                                    <td align="center"><span class="text-monospace">@cafe.DoingBusinessAsName</span></td>
+                                    <td align="center"><span class="text-monospace">@cafe.Address</span></td>
+                                    <td align="center"><span class="text-monospace">@cafe.LegalName</span></td>
                                 </tr>
                                     }
                                 }

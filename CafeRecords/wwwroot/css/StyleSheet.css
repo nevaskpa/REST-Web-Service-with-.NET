@@ -5,7 +5,7 @@
 
 .w3-margin-bottom {
     margin-bottom: 16px !important;
-        color: white
+    color: white
 }
 
 .w3-quarter {
@@ -22,18 +22,19 @@
 
 .w3-padding-16 {
     padding-top: 16px !important;
-    padding-bottom: 16px !important ;
+    padding-bottom: 16px !important;
     color: white
 }
-.table-border{
-    border:2px solid white;
+
+.table-border {
+    border: 2px solid white;
 }
 
 .uprtable-border {
-    border:hidden;
+    border: hidden;
 }
 
-.table-border th,td{
+.table-border th, td {
     border: 1px solid white;
 }
 
@@ -43,20 +44,26 @@
     color: white;
     font-weight: bold;
     border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.tbl-style {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
     width: 80%;
     padding: 20px;
     text-align: center;
 }
 
 .hdr-text {
-    
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
+    font-style: italic;
     width: 90%;
     padding: 20px;
     text-align: center;
@@ -64,7 +71,7 @@
 
 .hdr-text2 {
     color: white;
-    font-weight:normal;
+    font-weight: normal;
     width: 40%;
     padding: 0px;
     text-align: center;
