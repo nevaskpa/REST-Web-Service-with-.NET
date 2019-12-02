@@ -42,8 +42,10 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url("https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6e/e0/1a.jpg");
+    background-color: #cccccc;
 }
 .footer {
   position: absolute;

@@ -5,7 +5,30 @@
     CafeRecord.Cafe[] cafes = (CafeRecord.Cafe[])ViewData["allCafes"];
 }
 
-<h1>SearchCafeOwner</h1>
+<head>
+        
+        <link rel="stylesheet" href="~/css/StyleSheet.css" type="text/css" />
+ </head>
+<style>
+body  {
+  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2013/04/26/78634/998a3ff861f850b7d0ff68a47789ba3f-700.jpg");
+  background-color: #cccccc;
+
+height: 100%; 
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    text-emphasis-color: white;
+  }
+
+</style>
+
+<html>
+<body>
+<div class="text-center">
+<h1 class="hdr-text">Search Cafe</h1>
+<br />
+</div>
 <form action="" method="POST">
     <div class="form-group">
         <label class="control-label" for="search"><strong></strong></label>
@@ -23,18 +46,18 @@
             <div class="col-md-12">
                 <nav>
                     <div class="nav nav-tabs nav-fill" role="tablist">
-                        <a class="nav-item nav-link active" data-toggle="tab" href="#businessOwners" role="tab" aria-controls="nav-home" aria-selected="true">Business Owners</a>
+                        <a class="nav-item nav-link active" data-toggle="tab" href="#businessOwners" role="tab" aria-controls="nav-home" aria-selected="true">Cafe Details</a>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="businessOwners" role="tabpanel">
-                        <table class="table table-bordered table-striped table-hover">
+                        <table class="table table-border table-striped table-hover auto-index" bgcolor="white">
                             <thead>
-                                <tr>
-                                    <th>Account Number</th>
-                                    <th>Business Name</th>
-                                    <th>Address</th>
-                                    <th>Legal Name</th>
+                                <tr align="center">
+                                    <th align="left">Account Number</th>
+                                    <th align="center">Cafe Name</th>
+                                    <th align="center">Address</th>
+                                    <th align="right">Business Name</th>
 
                                 </tr>
                             </thead>
@@ -44,16 +67,16 @@
                                     @foreach (var cafe in Model.cafes)
                                     {
                                 <tr>
-                                    <td>@cafe.AccountNumber</td>
-                                    <td>@cafe.DoingBusinessAsName</td>
-                                    <td>@cafe.Address</td>
-                                    <td>@cafe.LegalName</td>
+                                    <td align="center">@cafe.AccountNumber</td>
+                                    <td align="center">@cafe.DoingBusinessAsName</td>
+                                    <td align="center">@cafe.Address</td>
+                                    <td align="center">@cafe.LegalName</td>
                                 </tr>
                                     }
                                 }
                                 else
                                 {
-                                    <tr class="danger">
+                                    <tr class="danger" align="center">
                                         <td colspan="5" class="text-center">
                                             <span class="font-weight-bolder text-danger">No results found for term "@Model.Search"</span>
 
@@ -69,3 +92,5 @@
     </div>
 }
 
+</body>
+</html>
