@@ -6,6 +6,7 @@
     string ownerName = (string)ViewData["ownerNames"];
 }
 
+
 <style>
 body  {
   background-image: url("https://hotelemc2.com/wp-content/uploads/2018/02/Why-Chicago-is-the-Best-City-in-the-World.png");
@@ -16,7 +17,6 @@ background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   }
-
 </style>
 
 <title>Chicago SideWalk Cafe</title>
@@ -32,7 +32,7 @@ background-position: center;
 
     <br />
 </table>
-    <table class="bg-text">
+    <table align="center" class="bg-text">
         <thead bgcolor="grey">
             <tr>
                 <th>Account Number</th>
@@ -45,8 +45,8 @@ background-position: center;
                 foreach (OwnerRecord.Owner owner in cafeOwners)
                 {
                     <tr>
-                        <td>@owner.AccountNumber</td>
-                        <td>@owner.DoingBusinessAsName</td>
+                        <td><span class="text-monospace">@owner.AccountNumber</span></td>
+                        <td><span class="text-monospace">@owner.DoingBusinessAsName</span></td>
                         <td>
                             @if (owner.IsNameNull(owner.OwnerFirstName + owner.OwnerMiddleInitial + owner.OwnerLastName))
                             {
