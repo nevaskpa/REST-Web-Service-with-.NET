@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\debad\\source\\repos\\RupanjaliC\\IS7024-001\\CafeRecords\\CafeRecords.csproj": {}
+    "C:\\Users\\Parnika\\source\\repos\\nevaskpa\\IS7024\\CafeRecords\\CafeRecords.csproj": {}
   },
   "projects": {
-    "C:\\Users\\debad\\source\\repos\\RupanjaliC\\IS7024-001\\CafeRecords\\CafeRecords.csproj": {
+    "C:\\Users\\Parnika\\source\\repos\\nevaskpa\\IS7024\\CafeRecords\\CafeRecords.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\debad\\source\\repos\\RupanjaliC\\IS7024-001\\CafeRecords\\CafeRecords.csproj",
+        "projectUniqueName": "C:\\Users\\Parnika\\source\\repos\\nevaskpa\\IS7024\\CafeRecords\\CafeRecords.csproj",
         "projectName": "CafeRecords",
-        "projectPath": "C:\\Users\\debad\\source\\repos\\RupanjaliC\\IS7024-001\\CafeRecords\\CafeRecords.csproj",
-        "packagesPath": "C:\\Users\\debad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\debad\\source\\repos\\RupanjaliC\\IS7024-001\\CafeRecords\\obj\\",
+        "projectPath": "C:\\Users\\Parnika\\source\\repos\\nevaskpa\\IS7024\\CafeRecords\\CafeRecords.csproj",
+        "packagesPath": "C:\\Users\\Parnika\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Parnika\\source\\repos\\nevaskpa\\IS7024\\CafeRecords\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\debad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Parnika\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,16 +64,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }

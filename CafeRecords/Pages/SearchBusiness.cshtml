@@ -1,0 +1,94 @@
+﻿@page
+@model CafeRecords.Pages.SearchBusinessModel
+@{
+    ViewData["Title"] = "SearchBusiness";
+    BusinessOwnerRecord.BusinessOwner[] businessOwners = (BusinessOwnerRecord.BusinessOwner[])ViewData["allBusinessOwners"];
+}
+
+<head>
+
+    <link rel="stylesheet" href="~/css/StyleSheet.css" type="text/css" />
+</head>
+<style>
+    body {
+        background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2013/04/26/78634/998a3ff861f850b7d0ff68a47789ba3f-700.jpg");
+        background-color: #cccccc;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-emphasis-color: white;
+    }
+</style>
+
+<html>
+<body>
+    <div class="text-center">
+        <h1 class="hdr-text">Search Businesses</h1>
+        <br />
+    </div>
+    <form action="" method="POST">
+        <div class="form-group">
+            <label class="control-label" for="search"><strong></strong></label>
+            <input type="text" class="form-control" name="search" id="search" required />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Search" class="btn btn-danger" />
+        </div>
+    </form>
+
+    @if (Model.SearchCompleted)
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" role="tablist">
+                            <a class="nav-item nav-link active" data-toggle="tab" href="#businessOwners" role="tab" aria-controls="nav-home" aria-selected="true">Cafe Details</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="businessOwners" role="tabpanel">
+                            <table class="table table-border table-striped table-hover auto-index" bgcolor="white">
+                                <thead>
+                                    <tr align="center">
+                                        <th align="right">Business Name</th>
+                                        <th align="left">License Number</th>
+                                        <th align="center">Owner Name</th>
+                                        <th align="center">Business Acitvity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model.businessOwners.Count() > 0)
+                                    {
+                                        @foreach (var businessOwner in Model.businessOwners)
+                                        {
+                                            <tr>
+                                                <td align="center">@businessOwner.DoingBusinessAsName</td>
+                                                <td align="center">@businessOwner.LicenseNumber</td>
+                                                <td align="center">@businessOwner.OwnerFirstName @businessOwner.OwnerLastName</td>
+                                                <td align="center">@businessOwner.BusinessActivity</td>
+                                            </tr>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <tr class="danger" align="center">
+                                            <td colspan="5" class="text-center">
+                                                <span class="font-weight-bolder text-danger">No results found for term "@Model.Search"</span>
+
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</body>
+</html>
+
