@@ -53,7 +53,9 @@
         </table>
     </div>
     <br/>
-    <div>
-        <a class="badge-success" asp-area="" asp-page="/JSONFeed">Generate JSON</a>
-    </div>
+    <form action="/JSONFeed" method="GET">
+        <div class="form-group">
+            <input type="submit" value="Generate JSON" class="btn btn-dark" />            
+        </div>
+    </form>
 </body>
