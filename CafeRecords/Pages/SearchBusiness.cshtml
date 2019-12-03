@@ -5,13 +5,11 @@
     BusinessOwnerRecord.BusinessOwner[] businessOwners = (BusinessOwnerRecord.BusinessOwner[])ViewData["allBusinessOwners"];
 }
 
-
-
 <head>
     <link rel="stylesheet" href="~/css/StyleSheet.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/print.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="~/css/mobile.css" type="text/css" media="screen and (max-device-width: 480px)" />
 </head>
-
-
 
 <body class="body">
     <div class="text-center">
@@ -27,8 +25,6 @@
             <input type="submit" value="Search" class="btn btn-danger" />
         </div>
     </form>
-
-
 
     @if (Model.SearchCompleted)
     {
@@ -78,7 +74,4 @@
             </div>
         </div>
     }
-
-
-
 </body>
