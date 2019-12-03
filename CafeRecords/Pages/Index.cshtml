@@ -7,61 +7,57 @@
 }
 
 
-<style>
-body  {
-  background-image: url("https://hotelemc2.com/wp-content/uploads/2018/02/Why-Chicago-is-the-Best-City-in-the-World.png");
-  background-color: #cccccc;
-
-height: 100%; 
-background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
-</style>
-
-<title>Chicago SideWalk Cafe</title>
 
 <head>
-        
-        <link rel="stylesheet" href="~/css/StyleSheet.css" type="text/css" />
- </head>
+    <link rel="stylesheet" href="~/css/StyleSheet.css" type="text/css" />
+    <title>Chicago SideWalk Cafe</title>
+</head>
 
 
-<div class="text-center">
-    <h1 class="hdr-text">Chicago SideWalk Cafe Owners</h1>
 
-    <br />
-</table>
-    <table align="center" class="bg-text">
-        <thead bgcolor="grey">
-            <tr>
-                <th>Account Number</th>
-                <th>Cafe Name</th>
-                <th>Owner Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            @{
-                foreach (OwnerRecord.Owner owner in cafeOwners)
-                {
-                    <tr>
-                        <td><span class="text-monospace">@owner.AccountNumber</span></td>
-                        <td><span class="text-monospace">@owner.DoingBusinessAsName</span></td>
-                        <td>
-                            @if (owner.IsNameNull(owner.OwnerFirstName + owner.OwnerMiddleInitial + owner.OwnerLastName))
-                            {
-                                <span class="font-weight-bolder text-danger">@ownerName</span>
-                            }
+<body class="body">
+    <div class="text-center">
+        <h1 class="hdr-text">Chicago SideWalk Cafe Owners</h1>
 
-                            else
-                            {
-                                <span class="text-monospace">@owner.OwnerFirstName @owner.OwnerMiddleInitial @owner.OwnerLastName </span>
-                            }
 
-                        </td>
-                    </tr>
+
+        <br />
+
+        <table align="center" class="bg-text">
+            <thead>
+                <tr>
+                    <th>Account Number</th>
+                    <th>Cafe Name</th>
+                    <th>Owner Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (OwnerRecord.Owner owner in cafeOwners)
+                    {
+                        <tr>
+                            <td><span class="text-monospace">@owner.AccountNumber</span></td>
+                            <td><span class="text-monospace">@owner.DoingBusinessAsName</span></td>
+                            <td>
+                                @if (owner.IsNameNull(owner.OwnerFirstName + owner.OwnerMiddleInitial + owner.OwnerLastName))
+                                {
+                                    <span class="font-weight-bolder text-danger">@ownerName</span>
+                                }
+
+
+
+                                else
+                                {
+                                    <span class="text-monospace">@owner.OwnerFirstName @owner.OwnerMiddleInitial @owner.OwnerLastName </span>
+                                }
+
+
+
+                            </td>
+                        </tr>
+                    }
                 }
-            }
-        </tbody>
-    </table>
-</div>
+            </tbody>
+        </table>
+    </div>
+</body>

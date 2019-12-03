@@ -5,24 +5,15 @@
     BusinessOwnerRecord.BusinessOwner[] businessOwners = (BusinessOwnerRecord.BusinessOwner[])ViewData["allBusinessOwners"];
 }
 
-<head>
 
+
+<head>
     <link rel="stylesheet" href="~/css/StyleSheet.css" type="text/css" />
 </head>
-<style>
-    body {
-        background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2013/04/26/78634/998a3ff861f850b7d0ff68a47789ba3f-700.jpg");
-        background-color: #cccccc;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-emphasis-color: white;
-    }
-</style>
 
-<html>
-<body>
+
+
+<body class="body">
     <div class="text-center">
         <h1 class="hdr-text">Search Business Details</h1>
         <br />
@@ -37,25 +28,22 @@
         </div>
     </form>
 
+
+
     @if (Model.SearchCompleted)
     {
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <nav>
-                        <div class="nav nav-tabs nav-fill" role="tablist">
-                            <a class="nav-item nav-link active" data-toggle="tab" href="#businessOwners" role="tab" aria-controls="nav-home" aria-selected="true">Business Details</a>
-                        </div>
-                    </nav>
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="businessOwners" role="tabpanel">
                             <table class="bg-text">
                                 <thead>
                                     <tr align="center">
-                                    <th align="right">Business Name</th>
-                                    <th align="left">License Number</th>
-                                    <th align="center">Owner Name</th>
-                                    <th align="center">Business Acitvity</th>
+                                        <th align="right">Business Name</th>
+                                        <th align="left">License Number</th>
+                                        <th align="center">Owner Name</th>
+                                        <th align="center">Business Acitvity</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -77,6 +65,8 @@
                                             <td colspan="5" class="text-center">
                                                 <span class="font-weight-bolder text-danger">No results found for term "@Model.Search"</span>
 
+
+
                                             </td>
                                         </tr>
                                     }
@@ -89,6 +79,6 @@
         </div>
     }
 
-</body>
-</html>
 
+
+</body>

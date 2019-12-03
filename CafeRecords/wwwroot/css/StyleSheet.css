@@ -76,3 +76,18 @@
     padding: 0px;
     text-align: center;
 }
+
+.bg-header {
+    background-color: #AAADBF;
+    color: white;
+}
+
+.body {
+    background-image: url("https://wallpapercave.com/wp/XlLf2ez.jpg");
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-emphasis-color: white;
+}
