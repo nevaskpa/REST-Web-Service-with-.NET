@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/OwnerElement"
+  },
+  "definitions": {
+    "OwnerElement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "account_number": {
+          "type": "string",
+          "format": "integer"
+        },
+        "doing_business_as_name": {
+          "type": "string"
+        },
+        "owner_first_name": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "owner_last_name": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "owner_title": {
+          "type": "string"
+        },
+        "owner_middle_initial": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "account_number",
+        "doing_business_as_name",
+        "owner_first_name",
+        "owner_last_name",
+        "owner_title"
+      ],
+      "title": "OwnerElement"
+    }
+  }
+}

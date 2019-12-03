@@ -28,3 +28,5 @@ C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords\obj\Release\netcoreapp
 C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords\obj\Release\netcoreapp2.2\CafeRecords.dll
 C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords\obj\Release\netcoreapp2.2\CafeRecords.pdb
 C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords\obj\Release\netcoreapp2.2\CafeRecords.csproj.CopyComplete
+C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords\obj\Release\netcoreapp2.2\Razor\Pages\JSONFeed.g.cshtml.cs
+C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords\obj\Release\netcoreapp2.2\Razor\Pages\SearchBusiness.g.cshtml.cs

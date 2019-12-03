@@ -224,3 +224,4 @@ C:\Users\keyas\source\repos\satpatka\IS7024\CafeRecords\obj\Debug\netcoreapp2.2\
 C:\Users\keyas\source\repos\satpatka\IS7024\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.pdb
 C:\Users\keyas\source\repos\satpatka\IS7024\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.csproj.CopyComplete
 C:\Users\keyas\source\repos\satpatka\IS7024\CafeRecords\bin\Debug\netcoreapp2.2\CafeOwners_Schema.json
+C:\Users\Parnika\source\repos\nevaskpa\IS7024\CafeRecords\obj\Debug\netcoreapp2.2\CafeRecords.csprojAssemblyReference.cache
